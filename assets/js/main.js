@@ -11,7 +11,7 @@ const nextSlide = () => {
 	setTimeout(() => showedSlide.classList.remove('show'));
 }
 
-setInterval(nextSlide, 4000);
+setInterval(nextSlide, 5000);
 
 /* Slider */
 
