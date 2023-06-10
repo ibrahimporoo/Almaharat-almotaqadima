@@ -178,13 +178,16 @@ a {
 	border-bottom: 2px solid var(--dark-violet);
 }
 .navbar-brand {
-	max-width: 85px;
+	max-width: 105px;
 	margin: 0;
 }
-.navbar-toggler:focus {
-	box-shadow: none;
+.navbar-toggler {
+	border: 1px solid var(--dark-black) !important;
 }
-.navbar-toggler i {
+.navbar-toggler:focus {
+	box-shadow: none !important;
+}
+.navbar-toggler svg {
 	color: var(--dark-blue);
 }
 .dropdown-toggle::after {
@@ -482,7 +485,8 @@ a {
 	object-fit: contain;
 }
 footer {
-	background-color: #303441;
+	/* background-color: #303441; */
+	background-color: var(--light-violet);
 }
 footer .footer-logo {
 	max-width: 150px;
@@ -520,4 +524,7 @@ footer a:hover {
 }
 footer svg {
 	color: var(--light-gold);
+}
+.bottom-footer {
+	border-top: 1px solid var(--light-gold);
 }
