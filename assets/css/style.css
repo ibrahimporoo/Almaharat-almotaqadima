@@ -17,6 +17,7 @@
 	--vary-dark-blue: #300745;
 	--vary-dark-blue-second: #37084e;
 	/* --arabic-font: 'Noto Kufi Arabic', sans-serif; */
+	scroll-behavior: smooth;
 }
 body {
 	font-family: 'Noto Kufi Arabic', sans-serif;
@@ -99,11 +100,13 @@ a {
 	-ms-transition: 0.4s;
 	-o-transition: 0.4s;
 }
-.swiper {
+.our-files {
 	width: 100%;
 	height: 300px;
+	border: 2px solid var(--section-bg);
+	border-radius: 4px;
 }
-.swiper-slide {
+.our-files .swiper-slide {
 	text-align: center;
 	font-size: 18px;
 	background: #fff;
@@ -111,7 +114,7 @@ a {
 	justify-content: center;
 	align-items: center;
 }
-.swiper-slide img {
+.our-files .swiper-slide img {
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -330,14 +333,15 @@ a {
 }
 /* End Hero */
 /* Start Our skills */
-.our-skills {
+/* .our-skills {
 	background-color: var(--section-bg);
-}
+} */
 .our-skills .container img {
 	width: 100%;
 }
 .our-skills .container .box {
 	height: 120px;
+	background-color: var(--section-bg);
 	line-height: 2.8;
 	position: relative;
 	overflow: hidden;
@@ -391,6 +395,9 @@ a {
 }
 /* End Our skills */
 /* Start Our Companies */
+.companies {
+	background-color: var(--section-bg);
+}
 .companies .box {
 	box-shadow: 0px 0px 1px #e7e7e7;
 	border: 1px solid #e7e7e7;
@@ -478,11 +485,14 @@ a {
 	left: 0px;
 }
 .about-us .our-files img {
-	border: 30px solid rgba(255, 255, 255, 0.562);
+	padding: 10px 53px;
 }
 .about-us .our-files .three img {
-	border-width: 0;
+	padding: 0;
 	object-fit: contain;
+}
+.about-us .about-text {
+	font-size: 14px;
 }
 footer {
 	/* background-color: #303441; */
@@ -519,6 +529,11 @@ footer a {
 footer p {
 	color: rgba(245, 255, 255, 0.8);
 }
+@media (max-width: 992px) {
+	footer p.copyrights-text {
+		font-size: calc(9px + 0.2vw);
+	}
+}
 footer a:hover {
 	color: #fff;
 }
@@ -528,3 +543,41 @@ footer svg {
 .bottom-footer {
 	border-top: 1px solid var(--light-gold);
 }
+/* Start Clients */
+.clients {
+	/* background-color: var(--section-bg); */
+}
+.clients .clients-slider .swiper-slide img {
+  opacity: 0.5;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+	/* width: 100%; */
+}
+
+.clients .clients-slider .swiper-slide img:hover {
+  opacity: 1;
+}
+
+.clients .clients-slider .swiper-pagination {
+	margin-top: 50px;
+  position: relative;
+}
+
+.clients .clients-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #4154f1;
+  border: 1px solid var(--light-gold);
+}
+
+.clients .clients-slider .swiper-pagination .swiper-pagination-bullet-active {
+	background-color: #4154f1;
+	background-color: var(--light-gold);
+}
+
+/* End Clients */
