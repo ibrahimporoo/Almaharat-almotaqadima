@@ -30,30 +30,34 @@
 				<ul class="d-flex w-100 p-0 m-0 align-items-center justify-content-center justify-content-md-end gap-3">
 					<li class="d-flex align-items-center gap-2">
 						<i class="fa-solid fa-envelope"></i>
-						<a href="">info@almaharat-saudi.com</a>
+						<a href="mailto:info@almaharat-saudi.com" target="_blank">info@almaharat-saudi.com</a>
 					</li>
 					<li class="d-flex align-items-center gap-2">
 						<i class="fa-solid fa-phone"></i>
-						<a href="">+966 54 424 4514</a>
+						<a href="tel:+966544244514" target="_blank">+966 54 424 4514</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 		<div class="container">
-			<a class="navbar-brand" href="#">
+			<a class="navbar-brand" href="index.html">
 				<img src="assets/imgs/full-logo.svg" class="w-100" alt="" />
 			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main"
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainBar" aria-controls="mainBar"
 				aria-expanded="false" aria-label="Toggle navigation">
 				<i class="fa-solid fa-bars"></i>
 			</button>
-			<div class="collapse navbar-collapse" id="main">
+			<div class="collapse navbar-collapse" id="mainBar">
 				<ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
 					<li class="nav-item p-2 p-lg-3">
-						<a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+						<a class="nav-link active" aria-current="page" href="index.html#home">الرئيسية</a>
 					</li>
+					<li class="nav-item p-2 p-lg-3">
+						<a class="nav-link active" aria-current="page" href="#services">خدماتنا</a>
+					</li>
+<!-- 
 					<li class="nav-item p-2 p-lg-3 dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+						<a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
 							aria-expanded="false">
 							خدماتنا
 							<i class="fa-solid fa-chevron-down"></i>
@@ -64,8 +68,9 @@
 							<li><a class="dropdown-item" href="#">ادارة الاملاك</a></li>
 						</ul>
 					</li>
+					 -->
 					<li class="nav-item p-2 p-lg-3">
-						<a class="nav-link" href="#partners">خدمات شركات الرعاية</a>
+						<a class="nav-link" href="#clients">خدمات شركات الرعاية</a>
 					</li>
 					<li class="nav-item p-2 p-lg-3">
 						<a class="nav-link" href="#about">من نحن</a>
@@ -75,12 +80,12 @@
 					</li>
 				</ul>
 				<!-- <a href="#" class="contact-btn d-block mb-3 text-center w-lg-25 mb-lg-0">راسلنا</a> -->
-				<a href="#" class="main-btn d-inline-block mb-3 text-center w-lg-25 mb-lg-0">تصفح عقاراتنا</a>
+				<a href="real-states.html" class="main-btn d-inline-block mb-3 text-center w-lg-25 mb-lg-0">تصفح عقاراتنا</a>
 			</div>
 		</div>
 	</nav>
 	<!-- Start Hero -->
-	<div class="hero d-flex align-items-center justify-content-center">
+	<div id="home" class="hero d-flex align-items-center justify-content-center">
 		<div class="slide position-absolute top-0 left-0 w-100 h-100 show"></div>
 		<div class="slide position-absolute top-0 left-0 w-100 h-100"></div>
 		<div class="slide position-absolute top-0 left-0 w-100 h-100"></div>
@@ -95,7 +100,7 @@
 					أنحاء المملكة
 				</p>
 				<!-- <a href="#" class="contact-btn text-white">راسلنا</a> -->
-				<a href="#" class="main-btn d-inline-block">تصفح خدماتنا</a>
+				<a href="#services" class="main-btn d-inline-block">تصفح خدماتنا</a>
 			</div>
 		</div>
 	</div>
@@ -103,7 +108,7 @@
 	<!-- Start Main -->
 	<main id="main">
 		<!-- Start our skills -->
-		<section class="our-skills py-5">
+		<section id="skills" class="our-skills py-5">
 			<div class="section-title text-center">
 				<h2>لماذا تختارنا</h2>
 				<p>نحن نقدم خدمات متكاملة في كل خطوة.</p>
@@ -114,12 +119,7 @@
 						<div class="special-title">
 							<h3 class="position-relative pb-3 mb-3 mb-lg-5">ما يميزنا</h3>
 							<p>
-								الاستغلال الامثل للتكنولوجيا والذكاء الاصطناعي لتوفير افضل
-								الخدمات العقارية لعملائنا حاليا ومستقبلا تضامنن مع رؤية 2030
-							</p>
-							<p>
-								لتسهيل كافة المتطلبات لعملائنا مستقبلا فيما يتوافق معا رؤية
-								2030 لتسهيل كافة متطلبات الخدمات العقاريه.
+								الاستغلال الامثل للتكنولوجيا والذكاء الاصطناعي لتوفير افضل الخدمات العقارية وتسهيل كافة المتطلبات لعملائنا في ما يتوافق مع رؤية 2030
 							</p>
 						</div>
 					</div>
@@ -188,7 +188,7 @@
 		</section>
 		<!-- End our skills -->
 		<!-- Start Companies -->
-		<section class="companies py-5" id="partners">
+		<section id="services" class="companies py-5" id="partners">
 			<div class="section-title text-center">
 				<h2>خدماتنا</h2>
 				<p>اجتمعنا لخدمتك.</p>
@@ -219,8 +219,7 @@
 								<h6>الاستشارات الهندسية</h6>
 							</div>
 							<p>
-								نقيّم الأصول ونجري الدراسات والبحوث العقارية المعتمدة من
-								الجهات الرسمية والمتوافقة مع المعايير المحاسبية الدولية......
+								نحو بيئة هندسية أفضل | اليوم و أكثر من أي وقت مضى فالمجال الهندسي لدينا يحتاج إلى رؤية قوية. هذه الرؤية الواضحة هي بالضبط ما نستند عليه هنا
 							</p>
 						</div>
 					</div>
@@ -277,7 +276,7 @@
 		<!-- ======= Clients Section ======= -->
 		<section id="clients" class="clients py-5">
 			<div class="section-title text-center mb-5">
-				<h2>شركات الرعاية</h2>
+				<h2>مؤسسات وشركات الرعاية</h2>
 				<p>شركات ومؤسسات ذو خبرة وكفاءه وجودة عاليه في جميع المجالات الخادمة لمجال العقار.</p>
 			</div>
 			<div class="container overflow-hidden">
@@ -314,7 +313,7 @@
 		</section>
 		<!-- End Clients Section -->
 		<!-- Start About us -->
-		<section class="about-us py-5" id="about">
+		<section id="about" class="about-us py-5" id="about">
 			<div class="container py-5 overflow-hidden">
 				<div class="row align-items-center justify-content-between flex-column flex-md-row gap-4 gap-lg-0">
 					<div class="col-12 col-lg-4 wow bounceInRight" data-wow-delay="0.4s">
@@ -376,68 +375,56 @@
 					<h5 class="mb-4">روابط</h5>
 					<ul class="pt-3">
 						<li class="mb-2">
-							<a href="" class="d-flex align-items-center gap-2">
+							<a href="#home" class="d-flex align-items-center gap-2">
 								<i class="fa-solid fa-arrow-left"></i>
 								الرئيسية
 							</a>
 						</li>
 						<li class="mb-2">
-							<a href="" class="d-flex align-items-center gap-2">
+							<a href="#services" class="d-flex align-items-center gap-2">
 								<i class="fa-solid fa-arrow-left"></i>
 								خدماتنا
 							</a>
 						</li>
 						<li class="mb-2">
-							<a href="" class="d-flex align-items-center gap-2">
+							<a href="#clients" class="d-flex align-items-center gap-2">
 								<i class="fa-solid fa-arrow-left"></i>
 								شركات الرعاية
 							</a>
 						</li>
 						<li class="mb-2">
-							<a href="" class="d-flex align-items-center gap-2">
+							<a href="#about" class="d-flex align-items-center gap-2">
 								<i class="fa-solid fa-arrow-left"></i>
 								من نحن
-							</a>
-						</li>
-						<li class="mb-2">
-							<a href="" class="d-flex align-items-center gap-2">
-								<i class="fa-solid fa-arrow-left"></i>
-								تواصل معنا
 							</a>
 						</li>
 					</ul>
 				</div>
 				<div class="col-12 col-md-6 col-lg-4">
 					<h5 class="mb-4">تواصل معنا</h5>
-					<ul>
+					<ul class="pt-3" style="direction: ltr;">
 						<li class="mb-2">
-							<a class="d-flex align-items-center gap-2" href="">
-								<i class="fa-regular fa-envelope"></i>
+							<a class="d-flex align-items-center justify-content-end gap-2" target="_blank" href="mailto:info@almaharat-saudi.com">
 								info@almaharat-saudi.com
+								<i class="fa-regular fa-envelope"></i>
 							</a>
 						</li>
 						<li class="mb-2">
-							<a class="d-flex align-items-center gap-2" href="">
-								<i class="fa-solid fa-square-phone"></i>
+							<a class="d-flex align-items-center justify-content-end gap-2" target="_blank" href="tel:+966 54 424 4514">
 								+966 54 424 4514
-							</a>
-						</li>
-						<li class="mb-3">
-							<a class="d-flex align-items-center gap-2" href="">
 								<i class="fa-solid fa-square-phone"></i>
-								+966 54 424 4514
 							</a>
 						</li>
 					</ul>
 					<ul class="d-flex align-items-center gap-3">
 						<li>
-							<a href="#" class="d-flex align-items-center justify-content-center rounded-circle brand">
+							<a href="https://wa.me/+966544244514" target="_blank" class="d-flex align-items-center justify-content-center rounded-circle brand">
 								<i class="fa-brands fa-whatsapp"></i>
 							</a>
 						</li>
 						<li>
-							<a href="#" class="d-flex align-items-center justify-content-center rounded-circle brand">
-								<i class="fa-brands fa-facebook"></i>
+							<a href="https://www.instagram.com/almaharatt/" target="_blank" class="d-flex align-items-center justify-content-center rounded-circle brand">
+								<i class="fa-brands fa-instagram"></i>
 							</a>
 						</li>
 					</ul>
@@ -452,18 +439,13 @@
 					العقارية © 2023
 				</p>
 				<ul class="d-flex align-items-center gap-4">
-					<li>
-						<a href="">
-							<i class="fa-brands fa-facebook"></i>
-						</a>
-					</li>
-					<li>
+					<!-- <li>
 						<a href="">
 							<i class="fa-brands fa-twitter"></i>
 						</a>
-					</li>
+					</li> -->
 					<li>
-						<a href="">
+						<a href="https://www.instagram.com/almaharatt/" target="_blank">
 							<i class="fa-brands fa-instagram"></i>
 						</a>
 					</li>
