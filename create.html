@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="assets/imgs/little-icon-2.svg" type="image/x-icon" />
+		<title>مؤسسة المهارات المتقدمة</title>
+		<link rel="stylesheet" href="assets/css/all.min.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet" />
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css" />
+		<!-- JS Libraries -->
+		<link rel="stylesheet" href="assets/css/animate.css" />
+	</head>
+
+	<body>
+		<!-- Start Navbar -->
+		<nav class="navbar fixed-top top-0 pt-0 navbar-expand-lg d-flex flex-column">
+			<div class="top-contact w-100">
+				<div class="container" dir="ltr">
+					<ul class="d-flex w-100 p-0 m-0 align-items-center justify-content-center justify-content-md-end gap-3">
+						<li class="d-flex align-items-center gap-2">
+							<i class="fa-solid fa-envelope"></i>
+							<a href="mailto:info@almaharat-saudi.com" target="_blank">info@almaharat-saudi.com</a>
+						</li>
+						<li class="d-flex align-items-center gap-2">
+							<i class="fa-solid fa-phone"></i>
+							<a href="tel:+966544244514" target="_blank">+966 54 424 4514</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="assets/imgs/full-logo.svg" class="w-100" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainBar" aria-controls="mainBar"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+				<div class="collapse navbar-collapse" id="mainBar">
+					<ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+						<li class="nav-item p-2 p-lg-3">
+							<a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+						</li>
+						<li class="nav-item p-2 p-lg-3">
+							<a class="nav-link" href="index.html#about">من نحن</a>
+						</li>
+						<li class="nav-item p-2 p-lg-3">
+							<a class="nav-link" href="index.html#footer">تواصل معنا</a>
+						</li>
+					</ul>
+					<!-- <a href="#" class="contact-btn d-block mb-3 text-center w-lg-25 mb-lg-0">راسلنا</a> -->
+					<a href="real-states.html" class="main-btn d-inline-block mb-3 text-center w-lg-25 mb-lg-0">تصفح عقاراتنا</a>
+				</div>
+			</div>
+		</nav>
+
+		<form class="mt-5 p-3" id="myForm">
+			<div class="container pt-5 pb-2">
+				<h5 class="pt-5 pb-3 title">تفاصيل العقار</h5>
+				<div class="row flex-column flex-md-row gap-3 pt-4">
+					<div class="col-12 col-md-4">
+						<label class="field" for="title">أدخل عنوانا جذابا للعقار</label>
+					</div>
+					<div class="col-12 col-md-8">
+						<input class="col-8 col-lg-6 py-2 px-3 mb-3" type="text" id="title" name="title" placeholder="أدخل عنوانا جذابا للعقار...">
+					</div>
+				</div>
+				<div class="row flex-column flex-md-row gap-3 pt-2">
+					<div class="col-12 col-md-4">
+						<label class="field" for="desc">وصف العقار</label>
+					</div>
+					<div class="col-12 col-md-8">
+						<textarea class="col-8 col-lg-6 p-2" id="desc" name="desc" placeholder="وصف العقار..."></textarea>
+					</div>
+				</div>
+				<div class="row flex-column flex-md-row gap-3 pt-2">
+					<div class="col-12 col-md-4">
+						<label class="field" for="category">تصنيف العقار</label>
+					</div>
+					<div class="col-12 col-md-8">
+						<select name="category" id="category">
+							<option value="فيلا" selected>فيلا</option>
+							<option value="شقة">شقة</option>
+							<option value="أرض">أرض</option>
+						</select>
+					</div>
+				</div>
+				<div class="row flex-column flex-md-row gap-3 pt-4">
+					<div class="col-12 col-md-4">
+						<label class="field" for="price">العقار متاح ... ؟</label>
+					</div>
+					<div class="col-12 col-md-8">
+						<div class="d-flex align-items-center justify-content-between" style="max-width: 260px;">
+							<label class="d-flex align-items-center gap-3">
+								<input type="radio" name="type" value="للبيع" checked>
+								<span>للبيع</span>
+							</label>
+							<label class="d-flex align-items-center gap-3">
+								<input type="radio" name="type" value="للإيجار">
+								<span>للإيجار</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row flex-column flex-md-row gap-3 pt-4">
+					<div class="col-12 col-md-4">
+						<label class="field" for="price_of_buying">سعر شراء العقار </label>
+					</div>
+					<div class="col-12 col-md-8">
+						<input type="number" placeholder="1,500,000" name="price_of_buying" id="price_of_buying">
+					</div>
+				</div>
+				<div class="row flex-column flex-md-row gap-3 pt-4">
+					<div class="col-12 col-md-4">
+						<label class="field" for="images">أعرض صور عقارك</label>
+					</div>
+					<div class="col-12 col-md-8">
+						<input type="file" multiple name="images" id="images" accept="image/*">
+					</div>
+				</div>
+				
+				<h5 class="pt-3 pb-3 title">المكان / العنوان</h5>
+				<div class="row flex-column flex-md-row gap-3 pt-4">
+					<div class="col-12 col-md-4">
+						<label class="field" for="address">أدخل عنوان العقار</label>
+					</div>
+					<div class="col-12 col-md-8">
+						<input type="text" class="col-8 col-lg-6" name="address" id="address" placeholder="قرطبة، شرق الرياض، الرياض">
+					</div>
+				</div>
+
+				<h5 class="pt-3 pb-3 title">بيانات المعلن</h5>
+				<div class="row flex-column flex-md-row gap-3 pt-4">
+					<div class="col-12 col-md-4">
+						<label class="field" for="full_name">الإسم بالكامل</label>
+					</div>
+					<div class="col-12 col-md-8">
+						<input type="text" class="col-8 col-lg-4" name="full_name" id="full_name" placeholder="محمد بن صالح العثيمين">
+					</div>
+				</div>
+				<div class="row flex-column flex-md-row gap-3 pt-4">
+					<div class="col-12 col-md-4">
+						<label class="field" for="tel_number">رقم الهاتف الشخصي</label>
+					</div>
+					<div class="col-12 col-md-8">
+						<input type="text" class="col-8 col-lg-4" name="tel_number" id="tel_number" placeholder="+966 54 424 4514">
+					</div>
+				</div>
+
+			</div>
+		</form>
+
+
+		<footer id="footer">
+			<div class="container py-5">
+				<div class="row justify-content-between">
+					<div class="col-12 col-md-6 col-lg-4">
+						<img class="footer-logo mb-4 w-25 w-sm-100" src="assets/imgs/footer-logo.svg" alt="" />
+						<p>
+							مؤسسة المهارات المتقدمة للخدمات العقارية مؤسسة معتمدة في مجال
+							التسويق العقاري والوساطة العقارية وادراة الأملاك
+						</p>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<h5 class="mb-4">روابط</h5>
+						<ul class="pt-3">
+							<li class="mb-2">
+								<a href="#home" class="d-flex align-items-center gap-2">
+									<i class="fa-solid fa-arrow-left"></i>
+									الرئيسية
+								</a>
+							</li>
+							<li class="mb-2">
+								<a href="#services" class="d-flex align-items-center gap-2">
+									<i class="fa-solid fa-arrow-left"></i>
+									خدماتنا
+								</a>
+							</li>
+							<li class="mb-2">
+								<a href="#clients" class="d-flex align-items-center gap-2">
+									<i class="fa-solid fa-arrow-left"></i>
+									شركات الرعاية
+								</a>
+							</li>
+							<li class="mb-2">
+								<a href="#about" class="d-flex align-items-center gap-2">
+									<i class="fa-solid fa-arrow-left"></i>
+									من نحن
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<h5 class="mb-4">تواصل معنا</h5>
+						<ul class="pt-3" style="direction: ltr;">
+							<li class="mb-2">
+								<a class="d-flex align-items-center justify-content-end gap-2" target="_blank" href="mailto:info@almaharat-saudi.com">
+									info@almaharat-saudi.com
+									<i class="fa-regular fa-envelope"></i>
+								</a>
+							</li>
+							<li class="mb-2">
+								<a class="d-flex align-items-center justify-content-end gap-2" target="_blank" href="tel:+966 54 424 4514">
+									+966 54 424 4514
+									<i class="fa-solid fa-square-phone"></i>
+								</a>
+							</li>
+						</ul>
+						<ul class="d-flex align-items-center gap-3">
+							<li>
+								<a href="https://wa.me/+966544244514" target="_blank" class="d-flex align-items-center justify-content-center rounded-circle brand">
+									<i class="fa-brands fa-whatsapp"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/almaharatt/" target="_blank" class="d-flex align-items-center justify-content-center rounded-circle brand">
+									<i class="fa-brands fa-instagram"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="container py-4 bottom-footer">
+				<div
+					class="d-flex align-items-center justify-content-between flex-column-reverse text-center text-sm-end flex-sm-row">
+					<p class="copyrights-text">
+						حقوق الملكية - جميع الحقوق محفوظة لمؤسسة المهارات المتقدمة للخدمات
+						العقارية © 2023
+					</p>
+					<ul class="d-flex align-items-center gap-4">
+						<!-- <li>
+							<a href="">
+								<i class="fa-brands fa-twitter"></i>
+							</a>
+						</li> -->
+						<li>
+							<a href="https://www.instagram.com/almaharatt/" target="_blank">
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</body>
+
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/all.min.js"></script>
+
+</html>
