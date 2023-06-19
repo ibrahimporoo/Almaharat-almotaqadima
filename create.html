@@ -125,11 +125,19 @@
 						<label class="field" for="images">أعرض صور عقارك</label>
 					</div>
 					<div class="col-12 col-md-8">
-						<input type="file" multiple name="images" id="images" accept="image/*">
+						<div class="images-files col-lg-6 py-5">
+							<input type="file" multiple hidden name="images" id="images" accept="image/*">
+							<div class="img-holder position-relative d-flex align-items-center justify-content-center">
+								<i class="fa-solid fa-camera-retro camera"></i>
+							</div>
+						</div>
+					</div>
+					<div class="uploaded-images py-3">
+						
 					</div>
 				</div>
 				
-				<h5 class="pt-3 pb-3 title">المكان / العنوان</h5>
+				<h5 class="pt-5 pb-3 title">المكان / العنوان</h5>
 				<div class="row flex-column flex-md-row gap-3 pt-4">
 					<div class="col-12 col-md-4">
 						<label class="field" for="address">أدخل عنوان العقار</label>
@@ -139,7 +147,7 @@
 					</div>
 				</div>
 
-				<h5 class="pt-3 pb-3 title">بيانات المعلن</h5>
+				<h5 class="pt-5 pb-3 title">بيانات المعلن</h5>
 				<div class="row flex-column flex-md-row gap-3 pt-4">
 					<div class="col-12 col-md-4">
 						<label class="field" for="full_name">الإسم بالكامل</label>
@@ -257,5 +265,6 @@
 
 	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="assets/js/all.min.js"></script>
+	<script src="assets/js/deal-with-firebase.js"></script>
 
 </html>

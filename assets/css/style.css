@@ -763,6 +763,58 @@ footer svg {
 #myForm select[name='category'] {
 	min-width: 260px;
 }
+#myForm .images-files {
+	border: 3px dashed var(--light-gray);
+	cursor: pointer;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+#myForm .images-files .img-holder {
+}
+#myForm .uploaded-images {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+#myForm .uploaded-images .image {
+	width: 130px;
+	height: 130px;
+	position: relative;
+}
+#myForm .uploaded-images .image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+#myForm .uploaded-images .image span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: var(--light-white-color);
+	font-size: calc(14px + 0.4vw);
+	padding: 4px 0;
+	background-color: rgba(0 0 0/ 20%);
+	width: 100%;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+#myForm .uploaded-images .image span:hover {
+	background-color: rgba(0 0 0/ 30%);
+}
+#myForm .images-files .img-holder svg.camera {
+	font-size: 40px;
+	color: var(--light-gray);
+}
 @media (max-width: 768px) {
 	#myForm input,
 	#myForm textarea,
