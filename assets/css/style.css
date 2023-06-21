@@ -16,6 +16,7 @@
 	--very-light-gray: #7c7e83;
 	--dark-blue: #111827;
 	--vary-dark-blue: #300745;
+	--main-violet: #864ef2;
 	--vary-dark-blue-second: #37084e;
 	/* --arabic-font: 'Noto Kufi Arabic', sans-serif; */
 	scroll-behavior: smooth;
@@ -37,7 +38,7 @@ a {
 }
 /* Components */
 .main-btn {
-  z-index: 1;
+	z-index: 1;
   padding: 10px 22px;
   position: relative;
   color: white;
@@ -50,6 +51,13 @@ a {
   -moz-transition: color 0.s3 ease-in-out;
   -ms-transition: color 0.s3 ease-in-out;
   -o-transition: color 0.s3 ease-in-out;
+}
+.main-btn.submit-btn {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
 }
 .main-btn::before {
   content: '';
@@ -120,6 +128,9 @@ a {
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
+}
+.en-field {
+	direction: ltr;
 }
 @media(min-width: 992px) {
 	.special-title h3:hover::before {
@@ -587,7 +598,9 @@ footer svg {
 }
 .real-estates .rooms {
 	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	justify-content: center;
 	gap: 25px 20px;
 }
 .real-estates .room-box {
@@ -698,35 +711,47 @@ footer svg {
 .real-estates .room-info .view-btn:hover {
 	background: var(--light-violet);
 }
-@media (max-width: 340px) {
+@media (max-width: 440px) {
 	.real-estates .rooms {
 		grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 	}
 	.real-estates .end-info .contact .whatsapp, .real-estates .end-info .contact .phone {
     padding: 4px 8px;
 	}
+	.real-estates .room-info li .icon {
+    max-width: 20px;
+    margin-inline-end: 1px;
+	}
 }
 /* End Our real estates */
 /* --------------------------- */
 /* ------- create Page ------ */
 /* --------------------------- */
-#myForm {
+#adding-estate-form {
 	background-color: var(--section-bg);
 }
-#myForm .container {
+#adding-estate-form .container {
 	min-height: 100vh;
-	background-color: var(--white-color);
 }
-#myForm .title {
+#adding-estate-form .container > section {
+	background-color: var(--white-color);
+	margin-block: 12px;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+}
+#adding-estate-form .title {
 	color: var(--light-violet);
 	border-bottom: 1px solid var(--light-gray);
 }
-#myForm .field {
+#adding-estate-form .field {
 	padding-bottom: 8px;
 	position: relative;
 	cursor: pointer;
 }
-#myForm .field::before {
+#adding-estate-form .field::before {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -739,12 +764,12 @@ footer svg {
 	-ms-transition: 0.3s;
 	-o-transition: 0.3s;
 }
-#myForm .field:hover::before {
+#adding-estate-form .field:hover::before {
 	width: 80%;
 }
-#myForm input,
-#myForm textarea,
-#myForm select {
+#adding-estate-form input,
+#adding-estate-form textarea,
+#adding-estate-form select {
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -752,18 +777,21 @@ footer svg {
 	-o-border-radius: 5px;
 	border: 2px solid var(--light-gray);
 	padding: 8px;
+	width: 70%;
 }
-#myForm input:focus,
-#myForm textarea:focus {
+#adding-estate-form input.invalid,
+#adding-estate-form textarea.invalid,
+#adding-estate-form select.invalid {
+	background-color: rgba(255 0 0 / 10%);
+}
+#adding-estate-form input:focus,
+#adding-estate-form textarea:focus {
 	border: 2px solid var(--light-violet);
 }
-#myForm textarea[name='desc'] {
+#adding-estate-form textarea[name='desc'] {
 	min-height: 130px;
 }
-#myForm select[name='category'] {
-	min-width: 260px;
-}
-#myForm .images-files {
+#adding-estate-form .images-files {
 	border: 3px dashed var(--light-gray);
 	cursor: pointer;
 	border-radius: 5px;
@@ -772,24 +800,27 @@ footer svg {
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
 }
-#myForm .images-files .img-holder {
+#adding-estate-form .images-files.invalid {
+	background-color: rgba(255 0 0 / 10%);
 }
-#myForm .uploaded-images {
+#adding-estate-form .images-files .img-holder {
+}
+#adding-estate-form .uploaded-images {
 	display: flex;
 	gap: 10px;
 	flex-wrap: wrap;
 }
-#myForm .uploaded-images .image {
+#adding-estate-form .uploaded-images .image {
 	width: 130px;
 	height: 130px;
 	position: relative;
 }
-#myForm .uploaded-images .image img {
+#adding-estate-form .uploaded-images .image img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
-#myForm .uploaded-images .image span {
+#adding-estate-form .uploaded-images .image span {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -808,17 +839,17 @@ footer svg {
 	-ms-transition: 0.3s;
 	-o-transition: 0.3s;
 }
-#myForm .uploaded-images .image span:hover {
+#adding-estate-form .uploaded-images .image span:hover {
 	background-color: rgba(0 0 0/ 30%);
 }
-#myForm .images-files .img-holder svg.camera {
+#adding-estate-form .images-files .img-holder svg.camera {
 	font-size: 40px;
 	color: var(--light-gray);
 }
 @media (max-width: 768px) {
-	#myForm input,
-	#myForm textarea,
-	#myForm select {
+	#adding-estate-form input,
+	#adding-estate-form textarea,
+	#adding-estate-form select {
 		width: 100%;
 	}
 }
