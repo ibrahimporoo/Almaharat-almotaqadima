@@ -661,7 +661,7 @@ footer svg {
 
 /* Start Our real estates */
 .real-estates {
-	height: calc(100vh - 125px);
+	min-height: calc(100vh - 125px);
 }
 .real-estates .rooms {
 	display: grid;
@@ -780,7 +780,7 @@ footer svg {
 }
 @media (max-width: 440px) {
 	.real-estates .rooms {
-		grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 	}
 	.real-estates .end-info .contact .whatsapp, .real-estates .end-info .contact .phone {
     padding: 4px 8px;
