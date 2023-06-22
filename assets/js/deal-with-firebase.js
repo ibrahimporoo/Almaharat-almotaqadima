@@ -38,7 +38,9 @@ getDocs(colRef)
   });
 
 const addingEstateForm = document.querySelector('#adding-estate-form'),
-submitBtn = document.querySelector('.submit-btn');
+submitBtn = document.querySelector('#submit-btn'),
+sweetAlert = document.querySelector('#alert'),
+closeAlert = document.querySelector('#close-alert');
 
 addingEstateForm.addEventListener('submit', async (e) => {
 
@@ -47,6 +49,8 @@ addingEstateForm.addEventListener('submit', async (e) => {
 	if(isValid()) {
 
 		const downloadURLs = [];
+
+		reloadButton(submitBtn);
 	
 		for (const file of files) {
 			const compressedImageFile = await compressFileIfNeeded(file);
@@ -64,6 +68,8 @@ addingEstateForm.addEventListener('submit', async (e) => {
 			type: addingEstateForm.type.value,
 			rooms_count: addingEstateForm.rooms_count.value,
 			bathrooms_count: addingEstateForm.bathrooms_count.value,
+			living_rooms: addingEstateForm.living_rooms.value,
+			bathrooms_count: addingEstateForm.bathrooms_count.value,
 			the_area: addingEstateForm.the_area.value,
 			floors_count: addingEstateForm.floors_count.value,
 			price_of_buying: addingEstateForm.price_of_buying.value,
@@ -77,7 +83,11 @@ addingEstateForm.addEventListener('submit', async (e) => {
 			is_special: false,
 			createdAt: serverTimestamp()
 		}).then(() => {
-			console.log("Data sent Succesfully");
+			submitBtn.classList.remove('reload');
+			submitBtn.innerHTML = 'إرسال';
+			clearInterval(btnReloadingInterval);
+			sweetAlert.classList.add('on');
+			addingEstateForm.reset();
 		});
 
 	}
@@ -104,8 +114,24 @@ function isValid() {
 		document.querySelector('.images-files').classList.add('invalid')
 	}
 	return valid;
-}
+};
 
+let btnReloadingInterval;
+function reloadButton(btn) {
+	btn.classList.add('reload');
+	// btn.innerHTML = '<span class="spinner"></span> قيد الارسال';
+	btn.innerHTML = 'قيد الارسال';
+	let count = 1;
+	btnReloadingInterval = setInterval(() => {
+		btn.innerHTML += '.';
+		if(count >= 4) {
+			count = 1;
+			// btn.innerHTML = '<span class="spinner"></span> قيد الارسال';
+			btn.innerHTML = 'قيد الارسال';
+		}
+		count++;
+	}, 1000);
+};
 
 /* Immediatly dealing with inputs */
 let files = [],
@@ -180,4 +206,9 @@ async function compressFileIfNeeded(file) {
 			resolve(file);
 		}
 	});
-}
+};
+
+/* Hide Alert when Click Outside */
+closeAlert.addEventListener('click', _ => {
+	sweetAlert.classList.remove('on');
+});

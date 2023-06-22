@@ -49,25 +49,25 @@
 			<div class="collapse navbar-collapse" id="mainBar">
 				<ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
 					<li class="nav-item p-2">
-						<a class="nav-link active" aria-current="page" href="index.html#home">الرئيسية</a>
+						<a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
 					</li>
-					<li class="nav-item p-2">
+					<!-- <li class="nav-item p-2">
 						<a class="nav-link active" aria-current="page" href="#services">خدماتنا</a>
+					</li> -->
+					
+					<li class="nav-item p-2 dropdown">
+						<a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							خدماتنا
+							<i class="fa-solid fa-chevron-down"></i>
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="#">التسويق العقاري</a></li>
+							<li><a class="dropdown-item" href="#">الوساطه العقارية</a></li>
+							<li><a class="dropdown-item" href="#">ادارة الاملاك</a></li>
+						</ul>
 					</li>
-					<!-- 
-						<li class="nav-item p-2 dropdown">
-							<a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-								aria-expanded="false">
-								خدماتنا
-								<i class="fa-solid fa-chevron-down"></i>
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="#">التسويق العقاري</a></li>
-								<li><a class="dropdown-item" href="#">الوساطه العقارية</a></li>
-								<li><a class="dropdown-item" href="#">ادارة الاملاك</a></li>
-							</ul>
-						</li>
-					-->
+					
 					<li class="nav-item p-2">
 						<a class="nav-link" href="#clients">خدمات شركات الرعاية</a>
 					</li>
@@ -78,8 +78,13 @@
 						<a class="nav-link" href="#footer">تواصل معنا</a>
 					</li>
 				</ul>
-				<a href="real-states.html" class="main-btn d-inline-block mb-3 text-center w-lg-25 mb-lg-0">تصفح عقاراتنا</a>
-				<a href="create.html" class="main-btn mx-2 d-inline-block mb-3 text-center w-lg-25 mb-lg-0">أضف عقار</a>
+				<a href="real-states.html" class="main-btn d-inline-block mb-0 mb-sm-3 text-center w-lg-25 mb-lg-0">
+					تصفح عقاراتنا
+				</a>
+				<a href="create.html" class="main-btn mx-0 mx-sm-2 d-inline-block mb-0 mb-sm-3 text-center w-lg-25 mb-lg-0">
+					أضف عقار
+					<i class="fa-solid fa-house-chimney-medical text-white"></i>
+				</a>
 			</div>
 		</div>
 	</nav>
@@ -99,7 +104,7 @@
 					أنحاء المملكة
 				</p>
 				<!-- <a href="#" class="contact-btn text-white">راسلنا</a> -->
-				<a href="#services" class="main-btn d-inline-block">تصفح خدماتنا</a>
+				<a href="#clients" class="main-btn d-inline-block">تصفح خدماتنا</a>
 			</div>
 		</div>
 	</div>
@@ -339,9 +344,6 @@
 									<div class="swiper-slide two">
 										<img src="assets/imgs/file-2.webp" alt="" />
 									</div>
-									<!-- <div class="swiper-slide three">
-										<img src="assets/imgs/file-3.PNG" alt="" />
-									</div> -->
 								</div>
 
 								<div class="button-next">
@@ -388,7 +390,7 @@
 						<li class="mb-2">
 							<a href="#clients" class="d-flex align-items-center gap-2">
 								<i class="fa-solid fa-arrow-left"></i>
-								شركات الرعاية
+								خدمات العقارات
 							</a>
 						</li>
 						<li class="mb-2">

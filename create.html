@@ -64,8 +64,20 @@
 			</div>
 		</nav>
 
+		<div id="alert" class="align-items-center justify-content-center">
+			<div class="alert-container py-5 px-3 text-center">
+				<i class="fa-regular fa-circle-check mb-2"></i>
+				<div class="text">
+					<h2 class="mb-4 fs-5 fs-sm-2">تم إرسال طلب تسويق عقارك</h2>
+					<p class="mb-4">سيتم قبول الطلب خلال أيام</p>
+					<button id="close-alert" class="main-btn px-4 py-2 submit-btn">OK</button>
+				</div>
+			</div>
+		</div>
+
 		<form class="mt-5" id="adding-estate-form">
 			<div class="container pt-5">
+
 				<section class="mt-5 px-3 px-lg-4 pt-3 pb-5">
 					<h5 class="pt-3 pb-3 title">تفاصيل العقار</h5>
 					<div class="row flex-column flex-md-row gap-3 pt-4">
@@ -144,11 +156,15 @@
 							</div>
 							<div class="col-12 col-md-8 d-flex flex-column flex-sm-row align-items-center gap-2">
 								<input class="w-md-50" type="number" placeholder="عدد غرف النوم؟" name="rooms_count" id="rooms_count">
-								<input class="w-md-50" type="number" placeholder="عدد الحمامات؟" name="bathrooms_count" id="bathrooms_count">
+								<input class="w-md-50" type="number" placeholder="عدد دورات المياه؟" name="bathrooms_count" id="bathrooms_count">
 							</div>
 							<div class="col-12 col-md-8 d-flex flex-column flex-sm-row align-items-center gap-2">
 								<input class="w-md-50" type="number" placeholder="عدد طوابق المبني؟" name="floors_count" id="floors_count">
 								<input class="w-md-50" type="number" placeholder="المساحة؟" name="the_area" id="the_area">
+							</div>
+							<div class="col-12 col-md-8 d-flex flex-column flex-sm-row align-items-center gap-2">
+								<input class="w-md-50" type="number" placeholder="عدد الصالات؟" name="living_rooms" id="living_rooms">
+								<!-- <input class="w-md-50" type="number" placeholder="المساحة؟" name="the_area" id="the_area"> -->
 							</div>
 						</div>
 					</div>
@@ -202,7 +218,9 @@
 					</div>
 				</section>
 
-				<button class="main-btn submit-btn mx-2 d-inline-block mt-3 mb-3" type="submit">إرسال</button>
+				<button class="main-btn submit-btn position-relative d-inline-block mb-3" type="submit" id="submit-btn">
+					إرسال
+				</button>
 
 			</div>
 		</form>

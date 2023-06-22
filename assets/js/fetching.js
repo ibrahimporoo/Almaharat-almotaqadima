@@ -49,6 +49,7 @@ const displayNext = async () => {
 			minimumFractionDigits: 0,
 			maximumFractionDigits: 0,
 		};
+
 		const formattedPrice = Number(realEstate.price_of_buying).toLocaleString('ar-SA', options);
 
 		container.innerHTML += `
@@ -86,19 +87,18 @@ const displayNext = async () => {
 						
 						<h4 class="price">${formattedPrice}</h4>
 						<div class="contact d-flex align-items-center justify-content-between gap-2">
-							<a href="" class="whatsapp d-flex align-items-center justify-content-center">
+							<a href="https://wa.me/+966544244514?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A3%D9%86%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%B1%D9%82%D9%85%20${realEstate.order}" target="_blank" class="whatsapp d-flex align-items-center justify-content-center">
 								<i class="fa-brands fa-whatsapp"></i>
 							</a>
-							<a href="" class="phone d-flex align-items-center justify-content-center">
+							<a href="tel:+966544244514" target="_blank" class="phone d-flex align-items-center justify-content-center">
 								<i class="fa-solid fa-phone-volume"></i>
 							</a>
 						</div>
 					</div>
-					<a href="" class="view-btn d-block mt-3">اقرأ المزيد ...</a>
 				</div>
 			</div>
 		`;
-
+		// <a href="" class="view-btn d-block mt-3">اقرأ المزيد ...</a>
 });
 
 };
