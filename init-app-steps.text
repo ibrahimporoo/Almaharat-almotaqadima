@@ -1,0 +1,6 @@
+1- npm init -y
+2- npm i webpack webpack-cli -D
+3- create the webpack.cinfig.js file
+4- add "build": "webpack" to package.json
+5- create firebase app and the init the firebase to your project
+--- npm init firebase

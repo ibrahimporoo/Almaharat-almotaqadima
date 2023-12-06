@@ -36,6 +36,11 @@ ul {
 a {
 	text-decoration: none !important;
 }
+button {
+	background-color: transparent;
+	border: 0;
+	outline: 0;
+}
 /* Components */
 .main-btn {
   z-index: 1;
@@ -919,6 +924,155 @@ footer svg {
 	#adding-estate-form select {
 		width: 100%;
 	}
+}
+/* Start Swiper */
+.estates-gallery {
+	height: 480px;
+}
+
+.estates-gallery .title {
+	border: 2px dashed var(--light-gold);
+	border-bottom: none;
+	border-radius: 12px 12px 0 0;
+	-webkit-border-radius: 12px 12px 0 0;
+	-moz-border-radius: 12px 12px 0 0;
+	-ms-border-radius: 12px 12px 0 0;
+	-o-border-radius: 12px 12px 0 0;
+}
+.estates-gallery .title h3 {
+	max-width: 94%;
+}
+
+.estates-gallery .swiper {
+	width: 100%;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.estates-gallery .swiper-slide {
+	background-size: cover;
+	background-position: center;
+}
+
+.estates-gallery .topSwiper {
+	height: 80%;
+	width: 100%;
+	position: relative;
+}
+
+.estates-gallery .topSwiper button {
+	font-size: 30px;
+	top: 50%;
+	/*background: #00000048;
+	*/color: var(--light-green-color);
+	font-weight: 900;
+	opacity: 0;
+	z-index: 1;
+	padding: 4px 12px;
+	position: absolute;
+	transform: translateY(-50%);
+	transition: 0.5s ease-in-out;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-ms-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+	border: none;
+	outline: none;
+}
+
+.estates-gallery .topSwiper .next-btn {
+	left: 0;
+}
+.estates-gallery .topSwiper .prev-btn {
+	right: 0;
+}
+
+.estates-gallery .topSwiper:hover button {
+	opacity: 1;
+}
+.estates-gallery .topSwiper button:hover {
+}
+
+.estates-gallery .bottomSwiper {
+	height: 20%;
+	box-sizing: border-box;
+	padding: 10px 0;
+}
+
+.bottomSwiper .swiper-slide {
+	width: 25%;
+	height: 100%;
+	opacity: 0.4;
+}
+
+.bottomSwiper .swiper-slide-thumb-active {
+	opacity: 1;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* End Swiper */
+/*  */
+.quick-details {
+	background: #fff;
+	border: 1px solid #d2d2d7;
+	box-shadow: 0 9px 17px rgba(0,0,0,.06), 0 2.71324px 5.125px rgba(0,0,0,.035), 0 1.12694px 2.12866px rgba(0,0,0,.046), 0 0.407592px 0.769896px rgba(0,0,0,.07);
+	border-radius: 12px;
+	height: fit-content;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	-ms-border-radius: 12px;
+	-o-border-radius: 12px;
+}
+.quick-details .contacts-btn {
+	
+}
+.quick-details .contacts-btn .whatsapp {
+	border: 1px solid #4caf50;
+	border-radius: 12px;
+	white-space: nowrap;
+	min-width: 50%;
+	color: #4caf50;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	-ms-border-radius: 12px;
+	-o-border-radius: 12px;
+}
+.quick-details .contacts-btn .whatsapp svg {
+	color: #4caf50;
+}
+.quick-details .contacts-btn .phone {
+	background-color: var(--light-violet);
+	color: #fff;
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	-ms-border-radius: 12px;
+	-o-border-radius: 12px;
+}
+.quick-details .contacts-btn .whatsapp,
+.quick-details .contacts-btn .phone {
+	font-size: calc(12px + 0.3vw);
+	font-weight: bold;
+}
+.estates-gallery .description {
+	
+}
+.estates-gallery .description .icon {
+	max-width: 25px;
+}
+.estates-gallery .description span {
+
 }
 
 /* Start Keyframes */

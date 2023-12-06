@@ -9,12 +9,13 @@ import {
 } from 'firebase/storage';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBOLFmJ_Z4YrREKCYjI6JpiSUlDjclms3U",
-  authDomain: "test-1c407.firebaseapp.com",
-  projectId: "test-1c407",
-  storageBucket: "test-1c407.appspot.com",
-  messagingSenderId: "853357653606",
-  appId: "1:853357653606:web:716ccce3ff74be807787a7"
+  apiKey: "AIzaSyBbOaoeJVj77APBZVQ5rkoGqxbRgmgiA4c",
+  authDomain: "almaharat-almotakadma.firebaseapp.com",
+  projectId: "almaharat-almotakadma",
+  storageBucket: "almaharat-almotakadma.appspot.com",
+  messagingSenderId: "688274689543",
+  appId: "1:688274689543:web:ce54876a5a1010fd0024a2",
+  measurementId: "G-283QCP12BS"
 };
 
 // init services
@@ -69,7 +70,6 @@ addingEstateForm.addEventListener('submit', async (e) => {
 			rooms_count: addingEstateForm.rooms_count.value,
 			bathrooms_count: addingEstateForm.bathrooms_count.value,
 			living_rooms: addingEstateForm.living_rooms.value,
-			bathrooms_count: addingEstateForm.bathrooms_count.value,
 			the_area: addingEstateForm.the_area.value,
 			floors_count: addingEstateForm.floors_count.value,
 			price_of_buying: addingEstateForm.price_of_buying.value,

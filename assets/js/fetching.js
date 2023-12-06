@@ -4,12 +4,13 @@ import { getFirestore, collection, getDocs, query, where, orderBy, startAfter, l
 
 // test Firebase...
 const firebaseConfig = {
-  apiKey: "AIzaSyBOLFmJ_Z4YrREKCYjI6JpiSUlDjclms3U",
-  authDomain: "test-1c407.firebaseapp.com",
-  projectId: "test-1c407",
-  storageBucket: "test-1c407.appspot.com",
-  messagingSenderId: "853357653606",
-  appId: "1:853357653606:web:716ccce3ff74be807787a7"
+  apiKey: "AIzaSyBbOaoeJVj77APBZVQ5rkoGqxbRgmgiA4c",
+  authDomain: "almaharat-almotakadma.firebaseapp.com",
+  projectId: "almaharat-almotakadma",
+  storageBucket: "almaharat-almotakadma.appspot.com",
+  messagingSenderId: "688274689543",
+  appId: "1:688274689543:web:ce54876a5a1010fd0024a2",
+  measurementId: "G-283QCP12BS"
 };
 const app = initializeApp(firebaseConfig);
 // Create a reference to your Firestore collection
@@ -84,7 +85,6 @@ const displayNext = async () => {
 						</li>
 					</ul>
 					<div class="end-info pt-3 pb-2 d-flex align-items-center justify-content-between">
-						
 						<h4 class="price">${formattedPrice}</h4>
 						<div class="contact d-flex align-items-center justify-content-between gap-2">
 							<a href="https://wa.me/+966544244514?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A3%D9%86%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%B1%D9%82%D9%85%20${realEstate.order}" target="_blank" class="whatsapp d-flex align-items-center justify-content-center">
@@ -95,6 +95,7 @@ const displayNext = async () => {
 							</a>
 						</div>
 					</div>
+					<a href="/single-estate.html?id=${realEstate.id}" target="_blank" class="view-btn d-block mt-3">اقرأ المزيد ...</a>
 				</div>
 			</div>
 		`;
