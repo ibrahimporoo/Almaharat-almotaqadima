@@ -95,7 +95,7 @@ const displayNext = async () => {
 							</a>
 						</div>
 					</div>
-					<a href="/single-estate.html?id=${realEstate.id}" target="_blank" class="view-btn d-block mt-3">اقرأ المزيد ...</a>
+					<a href="single-estate.html?id=${realEstate.id}" target="_blank" class="view-btn d-block mt-3">اقرأ المزيد ...</a>
 				</div>
 			</div>
 		`;
